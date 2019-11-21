@@ -10,7 +10,7 @@ import os
 __author__ = """TruScanEEGpy developpment team"""
 __email__ = 'dom.makowski@gmail.com'
 __version__ = '0.0.1'
-__path__ = os.path.split(__file__)[0]
+# __path__ = os.path.split(__file__)[0]
 
 
 
