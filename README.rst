@@ -37,6 +37,13 @@ To install TruScanEEGpy, run this command in your terminal:
 Documentation
 --------------
 
-The documentation is available `here <https://TruScanEEGpy.readthedocs.io/en/latest>`_. Check out these tutorials:
+.. code-block:: python
 
-- **No tutorial yet**
+    > import TruScanEEGpy
+    > import mne
+    > 
+    > layout = TruScanEEGpy.layout_128('10-5')
+    > montage = TruScanEEGpy.montage_mne_128(layout)
+    > mne.viz.plot_montage(montage)
+
+.. image:: docs/img/montage_128.png
