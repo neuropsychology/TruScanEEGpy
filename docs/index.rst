@@ -1,5 +1,5 @@
-Welcome to NeuroKit's documentation!
-======================================
+Welcome to TruScanEEGpy's documentation!
+========================================
 
 .. toctree::
    :maxdepth: 2
