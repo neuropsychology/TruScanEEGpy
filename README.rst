@@ -1,8 +1,6 @@
-.. raw:: html
-
-    <embed>
-    <h1>TruScanEEGpy</h1>
-    </embed>
+<embed>
+<h1>TruScanEEGpy</h1>
+</embed>
     
     
 .. image:: https://img.shields.io/pypi/v/TruScanEEGpy.svg
