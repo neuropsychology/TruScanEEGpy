@@ -1,6 +1,6 @@
-<embed>
-<h1>TruScanEEGpy</h1>
-</embed>
+TruScanEEGpy
+============
+
     
     
 .. image:: https://img.shields.io/pypi/v/TruScanEEGpy.svg
