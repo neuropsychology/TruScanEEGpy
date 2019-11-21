@@ -21,7 +21,7 @@ def find_version():
 
 
 # Dependencies
-requirements = []
+requirements = ['pandas']
 setup_requirements = ['pytest-runner', ]
 test_requirements = ['pytest', 'coverage', ]
 
