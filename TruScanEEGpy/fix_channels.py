@@ -2,8 +2,8 @@
 
 """Submodule."""
 
-def fix_channel_names_128():
-    """Returns something something.
+def fix_channels_128():
+    """Returns something something
 
     Currently, the layout of the channels in the EEG montages found in
     TruScan Acquisition software (v7.8) is mismatched with the layout of the

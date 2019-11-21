@@ -4,11 +4,17 @@
 import os
 import pandas as pd
 
-from .fix_channel_names import fix_channel_names_128
+from .fix_channels import fix_channels_128
+from .convert_channels import tenfive_system_128
 
-
-def layout_128():
+def layout_128(names = "raw"):
+    """Create layout file
+    """
     layout = pd.read_csv(os.path.split(__file__)[0] + '/layouts/deymed_layout_128.txt', sep = '\t')
     layout.columns = layout.columns.str.strip()
-    layout["Name"] = fix_channel_names_128()
+    layout["Name"] = fix_channels_128()
+
+    # System
+    if names != "raw":
+        layout["Name"] = tenfive_system_128(layout["Name"])
     return(layout)
