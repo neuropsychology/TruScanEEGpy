@@ -9,6 +9,13 @@ from .convert_channels import tenfive_system_128
 
 def layout_128(names = "raw"):
     """Create layout file
+
+    Examples
+    --------
+    >>> import TruScanEEGpy
+    >>>
+    >>> layout = TruScanEEGpy.layout_128()
+    >>> layout = TruScanEEGpy.layout_128('10-5')
     """
     layout = pd.read_csv(os.path.split(__file__)[0] + '/layouts/deymed_layout_128.txt', sep = '\t')
     layout.columns = layout.columns.str.strip()

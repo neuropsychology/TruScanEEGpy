@@ -9,4 +9,4 @@ if __name__ == '__main__':
 
 
 def layout_128():
-    assert len(TruScanEEGpy.layout_128().index) == 128
+    assert len(TruScanEEGpy.layout_128(names = "10-5").index) == 128
