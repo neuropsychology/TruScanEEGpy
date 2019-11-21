@@ -1,6 +1,6 @@
 import pytest
 import doctest
-import neurokit2 as nk
+import TruScanEEGpy
 
 
 if __name__ == '__main__':
@@ -9,4 +9,4 @@ if __name__ == '__main__':
 
 
 def test_foo():
-    assert nk.foo() == 4
+    assert TruScanEEGpy.foo() == 4
