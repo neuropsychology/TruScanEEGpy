@@ -1,0 +1,45 @@
+# Config file for automatic testing at travis-ci.org
+
+language: python
+python:
+  - "nightly"
+  - 3.7
+  - 3.6
+  - 3.5
+  - 3.4
+  - 2.7
+
+os:
+  - linux
+  #- osx
+  
+install: 
+  - pip install -U tox-travis
+  - pip install coverage
+  - pip install codecov
+  - pip install flake8
+
+
+script:
+    - python setup.py install
+    - tox
+    - coverage run tests/test_foo.py
+
+after_success:
+    - codecov
+  
+  
+# Assuming you have installed the travis-ci CLI tool, after you
+# create the Github repo and add it to Travis, run the
+# following command to finish PyPI deployment setup:
+# $ travis encrypt --add deploy.password
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: DominiqueMakowski
+  password:
+    secure: PLEASE_REPLACE_ME
+  on:
+    tags: true
+    repo: neuropsychology/TruScanEEGpy
+    python: 3.7
