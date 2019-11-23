@@ -8,7 +8,7 @@ Welcome to TruScanEEGpy's documentation!
    readme
    installation
    usage
-   modules
+   functions
    contributing
    authors
    history
