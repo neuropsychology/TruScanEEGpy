@@ -24,8 +24,8 @@ import sys
 sys.path.insert(0, os.path.abspath('../'))
 
 import TruScanEEGpy
-import pandas as pd
-import numpy as np
+import pandas
+import numpy
 
 MOCK_MODULES = [
     'numpy',
