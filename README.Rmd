@@ -1,0 +1,39 @@
+---
+output: 
+  github_document:
+    toc: false
+    fig_width: 10.08
+    fig_height: 6
+editor_options: 
+  chunk_output_type: console
+---
+# TruScanEEGpy
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  dpi=450,
+  fig.path = "docs/img/"
+)
+
+library(reticulate)
+reticulate::use_python(python = "D:/Downloads/WPy64-3741/python-3.7.4.amd64/python.exe")
+matplotlib <- import("matplotlib", convert = TRUE)
+matplotlib$use("Agg")
+```
+
+**Utilities to work with Deymed's TruScan EEG system.**
+
+## Installation
+
+## Documentation
+
+```{python}
+import TruScanEEGpy
+import mne
+
+layout = TruScanEEGpy.layout_128('10-5')
+montage = TruScanEEGpy.montage_mne_128(layout)
+mne.viz.plot_montage(montage)
+```
+

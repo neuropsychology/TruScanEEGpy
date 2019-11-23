@@ -23,7 +23,7 @@ import mock
 import sys
 sys.path.insert(0, os.path.abspath('../'))
 
-import TruScanEEGpy
+# import TruScanEEGpy
 
 MOCK_MODULES = [
     'numpy',
