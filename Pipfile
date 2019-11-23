@@ -16,9 +16,6 @@ pylint = "*"
 pytest = "*"
 isort = "*"
 yapf = "*"
-pandas = "*"
-numpy = "*"
-mne = "*"
 
 [packages]
 TruScanEEGpy = {path = ".", editable = true}
