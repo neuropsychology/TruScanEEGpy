@@ -7,11 +7,8 @@ Welcome to TruScanEEGpy's documentation!
 
    readme
    installation
-   usage
    functions
    contributing
-   authors
-   history
 
 Indices and tables
 ==================
