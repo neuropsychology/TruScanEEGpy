@@ -6,6 +6,6 @@ This part of the documentation details the complete ``TruScanEEGpy`` for python 
 .. automodule:: TruScanEEGpy.__init__
     :members:
 
-.. autofunction:: TruScanEEGpy.montage
+.. automodule:: TruScanEEGpy.montage
 
 .. autofunction:: TruScanEEGpy.layout_128
