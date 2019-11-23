@@ -16,6 +16,9 @@ pylint = "*"
 pytest = "*"
 isort = "*"
 yapf = "*"
+pandas = "*"
+numpy = "*"
+mne = "*"
 
 [packages]
-neurokit2 = {path = ".", editable = true}
+TruScanEEGpy = {path = ".", editable = true}

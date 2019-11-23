@@ -7,7 +7,7 @@ import pandas as pd
 from .fix_channels import fix_channels_128
 from .convert_channels import tenfive_system_128
 
-def layout_128(names = "raw"):
+def layout_128(names = "index"):
     """Create layout file
 
     Examples
@@ -22,6 +22,6 @@ def layout_128(names = "raw"):
     layout["Name"] = fix_channels_128()
 
     # System
-    if names != "raw":
+    if names != "index":
         layout["Name"] = tenfive_system_128(layout["Name"])
     return(layout)

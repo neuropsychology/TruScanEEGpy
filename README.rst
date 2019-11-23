@@ -15,8 +15,8 @@ TruScanEEGpy
 .. image:: https://img.shields.io/pypi/dm/TruScanEEGpy
         :target: https://pypi.python.org/pypi/TruScanEEGpy
 
-.. image:: https://readthedocs.org/projects/TruScanEEGpy/badge/?version=latest
-        :target: https://TruScanEEGpy.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/truscaneegpy/badge/?version=latest
+        :target: https://truscaneegpy.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
