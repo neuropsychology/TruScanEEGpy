@@ -8,5 +8,5 @@ if __name__ == '__main__':
     pytest.main()
 
 
-def layout_128():
+def test_layout_128():
     assert len(TruScanEEGpy.layout_128(names = "10-5").index) == 128
