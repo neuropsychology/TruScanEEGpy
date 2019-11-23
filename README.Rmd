@@ -17,10 +17,16 @@ knitr::opts_chunk$set(
 )
 
 library(reticulate)
+# Insert your own python path below whenever you want to knit the README
 reticulate::use_python(python = "D:/Downloads/WPy64-3741/python-3.7.4.amd64/python.exe")
 matplotlib <- import("matplotlib", convert = TRUE)
 matplotlib$use("Agg")
 ```
+
+[![pypi](https://img.shields.io/pypi/v/TruScanEEGpy.svg)](https://pypi.python.org/pypi/TruScanEEGpy)
+[![Build Status](https://img.shields.io/travis/neuropsychology/TruScanEEGpy.svg)](https://travis-ci.org/neuropsychology/TruScanEEGpy)
+[![codecov](https://codecov.io/gh/neuropsychology/TruScanEEGpy/branch/master/graph/badge.svg)](https://codecov.io/gh/neuropsychology/TruScanEEGpy)
+[![Documentation Status](https://readthedocs.org/projects/truscaneegpy/badge/?version=latest)](https://truscaneegpy.readthedocs.io/en/latest/?badge=latest)
 
 **Utilities to work with Deymed's TruScan EEG system.**
 

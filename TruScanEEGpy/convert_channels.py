@@ -108,7 +108,7 @@ def tenfive_system_128(channel):
             "107" : "CPP2",
             "108" : "CPP4",
             "109" : "CPP6",
-            "110" : "TPP9",
+            "110" : "TPP8",
             "111" : "TPP10",
 
             "13" : "P7",
