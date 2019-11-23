@@ -48,6 +48,7 @@ setup(
     keywords='TruScanEEGpy',
     name='TruScanEEGpy',
     packages=find_packages(include=['TruScanEEGpy']),
+    package_data = {"TruScanEEGpy.layout":["*"],},
     setup_requires=setup_requirements,
     test_suite='pytest',
     tests_require=test_requirements,
