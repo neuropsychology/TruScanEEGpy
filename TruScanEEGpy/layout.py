@@ -22,7 +22,7 @@ def layout_128(names = "index"):
     >>> layout = TruScanEEGpy.layout_128()
     >>> layout = TruScanEEGpy.layout_128('10-5')
     """
-    layout = pd.read_csv(os.path.split(__file__)[0] + '/layouts/deymed_layout_128.txt', sep = '\t')
+    layout = pd.read_csv(Path.layouts() + '/deymed_layout_128.txt', sep = '\t')
     layout.columns = layout.columns.str.strip()
     layout["Name"] = fix_channels_128()
 
