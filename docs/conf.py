@@ -21,6 +21,7 @@
 import os
 import mock
 import sys
+
 sys.path.insert(0, os.path.abspath('../'))
 
 import TruScanEEGpy
@@ -47,8 +48,14 @@ for mod_name in MOCK_MODULES:
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.ifconfig',
     'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
     'sphinx_rtd_theme',
 ]
 
@@ -117,11 +124,13 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False
 
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TruScanEEGpy2doc'
+htmlhelp_basename = 'TruScanEEGpy-doc'
 
 
 # -- Options for LaTeX output ------------------------------------------

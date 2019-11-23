@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Utility functions to work with Deymed's TruScan EEG system.",
+    description="Utilities to work with Deymed's TruScan EEG system.",
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
