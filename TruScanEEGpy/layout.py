@@ -4,6 +4,7 @@
 import os
 import pandas as pd
 
+from .layouts import Path
 from .fix_channels import fix_channels_128
 from .convert_channels import tenfive_system_128
 
