@@ -9,7 +9,7 @@ import os
 
 __author__ = """TruScanEEGpy developpment team"""
 __email__ = 'dom.makowski@gmail.com'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 __modulepath__ = os.path.split(__file__)[0]
 
 
