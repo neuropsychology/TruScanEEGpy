@@ -56,6 +56,10 @@ extensions = [
     'sphinx_rtd_theme',
 ]
 
+napoleon_google_docstring = False
+napoleon_use_param = False
+napoleon_use_ivar = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -78,7 +82,11 @@ author = u"Dominique Makowski"
 # the built documents.
 #
 # The short X.Y version.
-version = "0.0.2"
+def find_version():
+    result = re.search(r'{}\s*=\s*[\'"]([^\'"]*)[\'"]'.format("__version__"), open('../TruScanEEGpy/__init__.py').read())
+    return result.group(1)
+    
+version = find_version()
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -185,5 +193,7 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-
+#Other 
+add_module_names = False # so functions aren’t prepended with the name of the package/module
+add_function_parentheses = True # to ensure that parentheses are added to the end of all function names
 
