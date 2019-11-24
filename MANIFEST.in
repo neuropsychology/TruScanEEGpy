@@ -3,7 +3,7 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
-include TruScanEEGpy/layouts/*.txt
+include TruScanEEGpy/layouts/*
 
 recursive-include tests *
 recursive-exclude * __pycache__
