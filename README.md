@@ -12,6 +12,10 @@ Status](https://readthedocs.org/projects/truscaneegpy/badge/?version=latest)](ht
 
 ## Installation
 
+To install TruScanEEGpy, run this command in your terminal:
+
+    pip install https://github.com/neuropsychology/TruScanEEGpy/zipball/master
+
 ## Documentation
 
 ``` python

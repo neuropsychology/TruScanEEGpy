@@ -18,8 +18,8 @@ knitr::opts_chunk$set(
 
 library(reticulate)
 # Insert your own python path below whenever you want to knit the README
-reticulate::use_python(python = "D:/Downloads/WPy64-3741/python-3.7.4.amd64/python.exe")
-matplotlib <- import("matplotlib", convert = TRUE)
+reticulate::use_python(python = "C:/Users/Dom/Desktop/WPy-3710/python-3.7.1.amd64/python.exe")
+matplotlib <- reticulate::import("matplotlib", convert = TRUE)
 matplotlib$use("Agg")
 
 # Submit to pypi
@@ -36,6 +36,13 @@ matplotlib$use("Agg")
 **Utilities to work with Deymed's TruScan EEG system.**
 
 ## Installation
+
+
+To install TruScanEEGpy, run this command in your terminal:
+
+```
+pip install https://github.com/neuropsychology/TruScanEEGpy/zipball/master
+```
 
 ## Documentation
 
