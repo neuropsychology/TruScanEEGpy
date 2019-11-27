@@ -47,7 +47,7 @@ setup(
     include_package_data=True,
     keywords='TruScanEEGpy',
     name='TruScanEEGpy',
-    packages=find_packages(include=['TruScanEEGpy']),
+    packages=find_packages(),
     # package_data = {"TruScanEEGpy.layouts":["*.txt"]},
     setup_requires=setup_requirements,
     test_suite='pytest',

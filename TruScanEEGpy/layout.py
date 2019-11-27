@@ -6,7 +6,7 @@ import pandas as pd
 
 from .layouts import Path
 from .fix_channels import fix_channels_128
-from .convert_channels import tenfive_system_128
+from .convert_channels import convert_to_tenfive
 
 def layout_128(names = "index"):
     """Create layout file
@@ -30,5 +30,5 @@ def layout_128(names = "index"):
 
     # System
     if names != "index":
-        layout["Name"] = tenfive_system_128(layout["Name"])
+        layout["Name"] = convert_to_tenfive(layout["Name"])
     return(layout)

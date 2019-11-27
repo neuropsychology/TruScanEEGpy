@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 from .fix_channels import fix_channels_128
-from .convert_channels import tenfive_system_128
+
 
 def montage_mne_128(layout):
     """Create MNE montage

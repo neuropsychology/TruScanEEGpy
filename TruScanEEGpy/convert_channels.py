@@ -3,7 +3,7 @@
 """Submodule."""
 
 
-def tenfive_system_128(channel):
+def convert_to_tenfive(ch_names):
     """Convert channel names to 10-5 system
 
     This function aims to convert the channel labeling (in number) to the standardized 10-5 electrode labeling.
@@ -122,18 +122,18 @@ def tenfive_system_128(channel):
             "17" : "P8",
             "112" : "P9",
             "119" : "P10",
-            
+
             "24" : "TP9",
             "29" : "TP10",
 
-            
+
             "113" : "PPO5",
             "114" : "PPO3",
             "115" : "PPO1",
             "116" : "PPO2",
             "117" : "PPO4",
             "118" : "PPO6",
-            
+
 
             "31" : "PO9",
             "60" : "PO7",
@@ -145,7 +145,7 @@ def tenfive_system_128(channel):
 
             "121" : "POO1",
             "122" : "POO2",
-            
+
             "120" : "OPO3",
             "123" : "OPO4",
 
@@ -160,5 +160,5 @@ def tenfive_system_128(channel):
             "127" : "Iz",
             "128" : "I2"
             }
-    channel = [correspondance.get(name, name)  for name in channel]
-    return(channel)
+    ch_names = [correspondance.get(name, name)  for name in ch_names]
+    return(ch_names)
