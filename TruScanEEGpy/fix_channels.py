@@ -2,7 +2,7 @@
 
 """Submodule."""
 
-def fix_channels_128():
+def fix_channels_128(ch_names):
     """Returns something something
 
     Currently, the layout of the channels in the EEG montages found in
