@@ -2,7 +2,7 @@
 
 """Submodule."""
 
-def fix_channels_128(ch_names):
+def fix_channels_128(ch_names=None):
     """Returns something something
 
     Currently, the layout of the channels in the EEG montages found in
@@ -11,7 +11,8 @@ def fix_channels_128(ch_names):
     layouts by re-labelling the channel names in the TruScan Acquisition
     software to the names of the corresponding channels in the cap.
     """
-    ch_names = list(range(1, 128 + 1))
+    if ch_names is None:
+        ch_names = list(range(1, 128 + 1))
     ch_names = [str(x) for x in ch_names]
     correspondance = {
             "20": "24",
