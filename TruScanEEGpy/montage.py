@@ -32,6 +32,9 @@ def montage_mne_128(layout):
     >>> montage = mne.channels.make_standard_montage('GSN-HydroCel-128')
     >>> montage.get_positions()
     >>> mne.viz.plot_montage(montage)
+    >>>
+    >>> montage = mne.channels.make_standard_montage('easycap-M1')
+    >>> mne.viz.plot_montage(montage)
     """
     layout["ID"] = layout["Name"]
     layout = layout.set_index("Name")
@@ -50,14 +53,14 @@ def montage_mne_128(layout):
         # nasion=np.array([5.27205792e-18, 8.60992398e-02, -4.01487349e-02]),
         # lpa=np.array([-0.08609924, -0.0, -0.04014873]),
         # rpa=np.array([0.08609924, 0.0, -0.04014873]),
-        # biosemi128 -----------
-        # nasion=np.array([0.0, 0.09821842, -0.02554916]),
-        # lpa=np.array([-0.07266855, 0.00043744, -0.03520521]),
-        # rpa=np.array([0.07266855, 0.00043744, -0.03520521]),
+        # GSN-HydroCel-128 -----------
+        nasion=np.array([0.0, 0.09821842, -0.02554916]),
+        lpa=np.array([-0.07266855, 0.00043744, -0.03520521]),
+        rpa=np.array([0.07266855, 0.00043744, -0.03520521]),
         # TruScanEEGpy -----------
-        nasion=np.array([0.0, 0.08116, -0.03279]),
-        lpa=np.array([-0.07685, 0.02609, -0.03279]),
-        rpa=np.array([0.07685, 0.02609, -0.03279]),
-        coord_frame="head",  # "unknown",
+        # nasion=np.array([0.0, 0.08116, -0.03279]),
+        # lpa=np.array([-0.07685, 0.02609, -0.03279]),
+        # rpa=np.array([0.07685, 0.02609, -0.03279]),
+        coord_frame="unknown",  # "unknown",
     )
     return montage
